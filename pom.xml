@@ -17,6 +17,10 @@
 		<maven.compiler.source>11</maven.compiler.source>
 		<junit.jupiter.version>5.8.1</junit.jupiter.version>
 
+		<sqlite.driver.version>3.36.0.3</sqlite.driver.version>
+		<jstl.api.version>1.2</jstl.api.version>
+
+
 		<!-- Projektin merkistökoodaus -->
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -61,6 +65,18 @@
 			<version>${junit.jupiter.version}</version>
 			<scope>test</scope>
 		</dependency>
+
+		<dependency>
+			<groupId>org.xerial</groupId>
+			<artifactId>sqlite-jdbc</artifactId>
+			<version>${sqlite.driver.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+			<version>${jstl.api.version}</version>
+		</dependency>
+
 	</dependencies>
 
 	<build>
